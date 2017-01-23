@@ -1,0 +1,26 @@
+{
+  "name": "url-nav",
+  "version": "1.0.0",
+  "description": "Url navigation calculator",
+  "main": "index.js",
+  "scripts": {
+    "install": "",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "lint": "eslint ./*.js"
+  },
+  "license": "BSD",
+  "author": {
+    "name": "Ilya Yurchenko",
+    "email": "yourchenkoiv@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hololoev/url-nav.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "mocha": "*"
+  }
+}
