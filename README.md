@@ -1,6 +1,6 @@
 # Url navigation calculator
 
-Simple helper for calculation url path.
+Simple helper for url path calculation.
 
 
 ## Installation
@@ -15,7 +15,7 @@ urlCalc = function (currentUrl, navigateTo)
 
 returns new url
 
-Website's hostname will be used as base url. Current url will be used for calculation relative path.
+Website's hostname (in currentUrl) will be used as base url. currentUrl will be used for calculation relative path.
 
 ```js
 const urlCalc = require('url-nav');
@@ -25,5 +25,7 @@ urlCalc('http://example.com/page1', 'article1/'); // http://example.com/page1/ar
 urlCalc('http://example.com/page1', '../page2/article2'); // http://example.com/page2/article2
 
 urlCalc('http://example.com/page1/article4', '/page3/article3'); // http://example.com/page3/article3/
+
+urlCalc('http://example.com/page1', 'http://example.com/page2'); // http://example.com/page2
 
 ```
